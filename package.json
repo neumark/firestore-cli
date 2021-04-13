@@ -1,0 +1,28 @@
+{
+  "name": "firestore-cli",
+  "version": "1.0.0",
+  "description": "The missing CLI for Firestore",
+  "author": "Peter Neumark <neumark.peter@gmail.com>",
+  "license": "Apache-2.0",
+  "main": "dist/firestore-cli.js",
+  "typings": "dist/types/firestore-cli.d.ts",
+  "scripts": {
+      "build": "yarn run webpack -c webpack.config.js --mode development"
+  },
+  "bin": {
+      "firestore-cli": "dist/firestore-cli.js"
+  },
+  "devDependencies": {
+    "firebase-tools": "^9.8.0",
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.2.3",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-node-externals": "^2.5.2",
+    "yargs": "^16.2.0"
+  },
+  "dependencies": {
+    "firebase-admin": "^9.5.0",
+    "source-map-support": "^0.5.19"
+  }
+}
